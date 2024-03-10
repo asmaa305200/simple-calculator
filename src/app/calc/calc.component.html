@@ -1,0 +1,30 @@
+<div class="container ">
+    <div class="calc mt-5">
+  <section class="output bg-dark"><span>{{res}}</span></section>
+  <table>
+    <tr>
+      <td (click)="getItem(item)" *ngFor="let item of ['+' , '-' , '*' , '/']">{{item}}</td>
+    </tr>
+    <tr>
+      <td (click)="getItem(item)"  *ngFor="let item of [7 , 8 , 9]">{{item}}</td>
+
+      <td rowspan="3" class="equla" (click)="equal()">=</td>
+
+    </tr>
+    <tr>
+      <td (click)="getItem(item)"  *ngFor="let item of [4 , 5 , 6]">{{item}}</td>
+    </tr>
+    <tr>
+      <td (click)="getItem(item)"  *ngFor="let item of [1 , 2 , 3 ]">{{item}}</td>
+    </tr>
+    <tr>
+      <td (click)="getItem(item)"  *ngFor="let item of [ 0,'.' ]">{{item}}</td>
+       <td class="bc" (click)="del()" >BC</td>
+      <td class="reset" (click)="reset()">AC</td>
+
+    </tr>
+  </table>
+
+</div>
+</div>
+
